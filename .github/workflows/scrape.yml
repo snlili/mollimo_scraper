@@ -2,7 +2,7 @@ name: Scrape Mollimo cars
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "14,44 * * * *"
   workflow_dispatch:          # adds a "Run workflow" button for testing
 
 permissions:
