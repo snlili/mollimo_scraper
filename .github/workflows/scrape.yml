@@ -11,8 +11,6 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    env:
-      TZ: Europe/Budapest     # timestamps in Hungarian time instead of UTC
     steps:
       - uses: actions/checkout@v4
 
