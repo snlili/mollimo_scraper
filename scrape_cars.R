@@ -1,5 +1,6 @@
 library(httr)
 library(jsonlite)
+Sys.setenv(TZ = "Europe/Budapest")
 
 get_limo_cars <- function() {
   url <- paste0("https://mollimo.hu/data/cars.js?", as.integer(Sys.time()))
