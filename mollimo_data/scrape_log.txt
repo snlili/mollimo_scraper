@@ -10,3 +10,4 @@
 2026-11-16 11:31:52 Scraping OK 333 cars: cars_2026-11-16_1131.csv 
 2026-11-16 12:01:35 Scraping OK 334 cars: cars_2026-11-16_1201.csv 
 2026-11-16 12:31:32 Scraping OK 330 cars: cars_2026-11-16_1231.csv 
+2026-11-16 13:01:28 Scraping OK 330 cars: cars_2026-11-16_1301.csv 
