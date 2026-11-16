@@ -47,7 +47,7 @@ scrape <-
     if (is.null(df) || nrow(df) == 0) return(invisible(NULL))
     
     fname <- file.path(folder, paste0("cars_", format(Sys.time(), 
-                                                      "%Y-%m-%d_%H%M%S"), ".csv"))
+                                                      "%Y-%m-%d_%H%M"), ".csv"))
     write.csv(df, fname, row.names = FALSE)
     log_message("Scraping OK ", nrow(df), " cars: ", basename(fname))
     invisible(df)
