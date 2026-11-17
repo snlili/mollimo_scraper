@@ -45,4 +45,4 @@ Requires the R packages `httr` and `jsonlite`.
 
 This is a student project. The data comes from the publicly available MOL Limo website
 and is collected at a low frequency (one request every 30 minutes) for educational purposes only.
-This project is not affiliated with MOL Limo.
+I'm not affiliated with MOL Limo in any way.
