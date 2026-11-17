@@ -12,9 +12,7 @@ The map on the MOL Limo website is drawn from one file:
 https://mollimo.hu/data/cars.js
 ```
 
-It contains every **available** car as JSON, written as `window.cars = [ ... ];`.
-I found it with the browser's Developer Tools (Network tab) while the map page was loading.
-Because the data is in this file, no browser or map clicking (Selenium) is needed:
+It contains every **available** car as JSON.
 
 1. `scrape_cars.R` downloads `cars.js`, removes the `window.cars =` wrapper with a regex and parses the JSON with `jsonlite`.
 2. The cars are saved as one timestamped CSV per run in `mollimo_data/`.
