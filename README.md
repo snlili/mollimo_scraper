@@ -38,20 +38,6 @@ Each CSV has one row per available car:
 | `energy_level` | fuel/charge level as given by the website (unit unknown, use only relatively) |
 | `is_charging` | whether an electric car is charging |
 
-Load all snapshots into one data frame:
-
-```r
-source("scrape_cars.R")
-cars <- read_all_scrapes("mollimo_data")
-```
-
-## Running it yourself
-
-**Locally (one snapshot):**
-
-```bash
-Rscript scrape_cars.R
-```
 
 Requires the R packages `httr` and `jsonlite`.
 
