@@ -12,13 +12,13 @@ The map on the MOL Limo website is drawn from one file:
 https://mollimo.hu/data/cars.js
 ```
 
-It contains every **available** car as JSON.
+It contains every available car.
 
 1. `scrape_cars.R` downloads `cars.js`, removes the `window.cars =` wrapper with a regex and parses the JSON with `jsonlite`.
 2. The cars are saved as one timestamped CSV per run in `mollimo_data/`.
 3. **GitHub Actions** runs the script and commits the new CSV to this repository.
 4. **cron-job.org** starts the GitHub workflow every 30 minutes through the GitHub API
-   (GitHub's own `schedule` trigger turned out to be too irregular).
+   (GitHub's own `schedule` trigger was too irregular).
 
 ```
 cron-job.org ──(every 30 min)──▶ GitHub Actions ──▶ scrape_cars.R ──▶ mollimo_data/cars_*.csv
